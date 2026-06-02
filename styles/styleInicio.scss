@@ -66,6 +66,8 @@ $fuente-titulos: "Story Script", sans-serif;
             a{  
                 display: inline-block;
                 color: #FCA311;
+                font-family: $fuente-titulos;
+                font-size: 25px;
                 text-decoration: none;
                 transition: all 300ms;
                 
@@ -119,3 +121,103 @@ $fuente-titulos: "Story Script", sans-serif;
     }
 }
 
+//FOOTER O PIE DE PAGINA
+.footer{
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 30% 30% 1fr;
+    background: #000;
+    padding: 30px;
+    place-content: center;
+    
+    .nosotros{
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 20px;
+        
+        h3{ 
+            font-family: $fuente-titulos;
+            font-size: 30px;
+            letter-spacing: 3px;
+            color: #FCA311;
+            margin-bottom: 40px;
+        }
+
+        ul{
+            list-style: none;
+            font-size: 20px;
+            
+            li{
+                margin-bottom: 20px;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    letter-spacing: 3px;
+                    transition: all 300ms;
+
+                    &:hover{
+                        color: #FCA311;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .redes{
+        text-align: center;
+        margin-top: 20px;
+
+        h3{
+            font-family: $fuente-titulos;
+            font-size: 30px;
+            letter-spacing: 3px;
+            color: #FCA311;
+            margin-bottom: 80px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            gap: 40px;
+            list-style: none;
+
+            a{
+                display: inline-block;
+                color: white;
+                transition: all 300ms;
+
+                &:hover{
+                    color: #FCA311;
+                    transform: scale(1.5);
+                    text-decoration: underline;
+                }
+            }
+        }
+
+    }
+
+    .ubicacion{
+        margin-top: 20px;
+        text-align: center;
+
+        h3{
+            font-family: $fuente-titulos;
+            font-size: 30px;
+            letter-spacing: 3px;
+            color: #FCA311;
+            margin-bottom: 10px;
+        }
+
+        iframe{
+            height: 250px;
+            width: 400px;
+            border-radius: 30px;
+        }
+    }
+}
