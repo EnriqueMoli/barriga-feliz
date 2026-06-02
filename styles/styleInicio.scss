@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Story+Script&display=swap');
+$fuente-titulos: "Story Script", sans-serif;
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,10 +8,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+//HEADER O CABECERA - MENU PRINCIPAL
 .header{
     width: 100%;
     min-height: 150px;
-    background: #444;
+    background: #000;
     display: grid;
     grid-template-columns: 65% 1fr;
 
@@ -34,10 +39,13 @@
         h1{
             width: 100%;
             font-size: 40px;
+            font-family: $fuente-titulos;
             letter-spacing: 2px;
+            color: white;
+
             span{
-                color: rgb(204, 3, 3);
-                
+                color: #FCA311;
+                font-family: $fuente-titulos;
             }
         }
     }
@@ -57,18 +65,57 @@
 
             a{  
                 display: inline-block;
-                color: black;
+                color: #FCA311;
                 text-decoration: none;
                 transition: all 300ms;
                 
                 &:hover{
-                    background: black;
                     color: white;
                     padding: 12px;
                     border-radius: 10px;
-                    transform: scale(1.3);
+                    transform: scale(1.6);
                 }
             }
         }
     }
 }
+
+//MAIN O CONTENIDO
+.main{
+    background-image: url(/img/fondoInicio.jpeg);
+    background-position: center;
+    background-size: cover;
+    
+    width: 100%;
+    min-height: 750px;
+    display: flex;
+    justify-content: right;
+
+    .info{
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 50%;
+        padding: 40px;
+
+        h2{
+            color: white;
+            font-family: $fuente-titulos;
+            font-size: 70px;
+            text-transform: uppercase;
+
+            span{
+                font-family: $fuente-titulos;
+                color: #FCA311;
+            }
+        }
+
+        p{
+            color: #F5F5F5;
+            text-shadow: 0px 0px 5px #0000;
+            font-size: 20px;
+            letter-spacing: 4px;
+            font-weight: bold;
+            margin-top: 50px
+        };
+    }
+}
+
