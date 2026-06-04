@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&family=Story+Script&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  width: 100%;
+  min-height: 150px;
+  background: #000;
+  display: grid;
+  grid-template-columns: 65% 1fr;
+}
+.header .logo {
+  display: grid;
+  grid-template-columns: 7% 1fr;
+  place-items: center;
+  margin-left: 100px;
+}
+.header .logo .imagenLogo {
+  max-width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.header .logo .imagenLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header .logo h1 {
+  width: 100%;
+  font-size: 40px;
+  font-family: "Story Script", sans-serif;
+  letter-spacing: 2px;
+  color: white;
+}
+.header .logo h1 span {
+  color: #FCA311;
+  font-family: "Story Script", sans-serif;
+}
+.header .menu {
+  margin-right: 80px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.header .menu ul {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  list-style: none;
+}
+.header .menu ul a {
+  display: inline-block;
+  color: #FCA311;
+  font-family: "Story Script", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  transition: all 300ms;
+}
+.header .menu ul a:hover {
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  transform: scale(1.6);
+}
+
+.main {
+  height: 400px;
+  background: #000;
+  display: grid;
+  place-content: center;
+}
+.main form {
+  height: 350px;
+  width: 500px;
+  background: #fff;
+  box-shadow: 0px 0px 20px #fff;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 20px;
+}
+.main form .grupoCampo {
+  display: flex;
+  flex-flow: column wrap;
+}
+.main form .grupoCampo label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+}
+.main form .grupoCampo input,
+.main form .grupoCampo select {
+  height: 30px;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  padding: 2px;
+  transition: all 300ms;
+}
+.main form .grupoCampo input:focus,
+.main form .grupoCampo select:focus {
+  border-color: #FCA311;
+}
+.main form .grupoCampo textarea {
+  height: 50px;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+}
+.main form .anchoCompleto {
+  grid-column: 1/-1;
+}
+.main form .boton {
+  width: 30%;
+  margin: 10px auto 0;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #444;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.main form .boton:hover {
+  background: #FCA311;
+  transform: translateY(-2px);
+}
+
+.footer {
+  width: 100%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 30% 30% 1fr;
+  background: #000;
+  padding: 30px;
+  place-content: center;
+}
+.footer .nosotros {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 20px;
+}
+.footer .nosotros h3 {
+  font-family: "Story Script", sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #FCA311;
+  margin-bottom: 40px;
+}
+.footer .nosotros ul {
+  list-style: none;
+  font-size: 20px;
+}
+.footer .nosotros ul li {
+  margin-bottom: 20px;
+}
+.footer .nosotros ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: all 300ms;
+}
+.footer .nosotros ul li a:hover {
+  color: #FCA311;
+  text-decoration: underline;
+}
+.footer .redes {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer .redes h3 {
+  font-family: "Story Script", sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #FCA311;
+  margin-bottom: 80px;
+}
+.footer .redes ul {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  gap: 40px;
+  list-style: none;
+}
+.footer .redes ul a {
+  display: inline-block;
+  color: white;
+  transition: all 300ms;
+}
+.footer .redes ul a:hover {
+  color: #FCA311;
+  transform: scale(1.5);
+  text-decoration: underline;
+}
+.footer .ubicacion {
+  margin-top: 20px;
+  text-align: center;
+}
+.footer .ubicacion h3 {
+  font-family: "Story Script", sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #FCA311;
+  margin-bottom: 10px;
+}
+.footer .ubicacion iframe {
+  height: 250px;
+  width: 400px;
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=styleReserva.css.map */

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styleInicio.css">
+    <link rel="stylesheet" href="styles/styleReserva.css">
     <link rel="icon" href="img/restaurante.png">
-    <title>Inicio</title>
+    <title>Reservas</title>
 </head>
 <body>
 
@@ -34,20 +34,51 @@
         </nav>
     </header>
     <!-- FIN DEL HEADER O MENU PRINCIPAL -->
-    
 
-    <!-- INICIO DEL MAIN -->
+    <!-- INICIO MAIN O CONTENIDO -->
     <main class="main">
-        <section class="info">
-                <h2>Con cada bocado que das, <span>tu barriga te agradece más</span></h2>
-                <p>
-                    "Sabemos lo que buscas: explosión de sabor, porciones generosas y cero pretensiones. Nuestro menú está diseñado para los verdaderos amantes de la buena comida. Si tu cuerpo pide sabor del bueno, nosotros ponemos la mesa."
-                </p>
-        </section>
-    </main>
-    <!-- FIN DEL MAIN -->
+        <form action="">
+            <div class="grupoCampo">
+                <label for="" class="nombre">Nombres</label>
+                <input type="text">
+            </div>
 
-    <!-- INICIO DEL FOOTER -->
+            <div class="grupoCampo">
+                <label for="" class="apellido">Apellidos</label>
+                <input type="text">
+            </div>
+
+            <div class="grupoCampo">
+                <label for="">Fecha</label>
+                <input type="date" class="dateFecha">
+            </div>
+
+            <div class="grupoCampo">
+                <label for="">¿Cuantas personas?</label>
+                <input type="number" min="1" max="12">
+            </div>
+
+            <div class="grupoCampo">
+                <label for="">¿Celebra algun momento?</label>
+                <select name="" id="">
+                    <option value="">Ninguno</option>
+                    <option value="">Cumpleaños</option>
+                    <option value="">Aniversario</option>
+                </select>
+            </div>
+
+            <div class="grupoCampo anchoCompleto">
+                <label for="" class="comentario">Comentarios</label>
+                <textarea name="" id=""></textarea>
+            </div>
+
+            <button type="submit" class="boton anchoCompleto">Enviar</button>
+        </form>
+    </main>
+
+    <!-- FIN MAIN O CONTENIDO -->
+
+        <!-- INICIO DEL FOOTER -->
      <footer class="footer">
         <section class="nosotros">
             <h3>Nuestros Productos</h3>
