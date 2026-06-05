@@ -70,7 +70,7 @@
 }
 
 .main {
-  background-image: url(/img/fondoInicio.jpeg);
+  background-image: url(../img/fondoInicio.jpeg);
   background-position: center;
   background-size: cover;
   width: 100%;
